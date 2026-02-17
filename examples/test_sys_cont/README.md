@@ -17,6 +17,8 @@ static_net_gateway  = "10.10.30.1"
 static_net_dns      = "10.10.30.3"
 ```
 
+You might also consider modifying the `tofu/.gitignore` file if you don't want the tfstate file contents to be maintained in the git repo. Some resources will store secrets or sensitive information in the state file, so it is important to be aware of what is maintained there or prevent it form being exposed.
+
 ## Initialize Instance
 
 Setup dependencies
